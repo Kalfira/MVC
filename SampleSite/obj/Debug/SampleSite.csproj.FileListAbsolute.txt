@@ -1,0 +1,17 @@
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\bin\SampleSite.dll.config
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\bin\SampleSite.dll
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\bin\SampleSite.pdb
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\bin\System.Web.Helpers.dll
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\bin\System.Web.Mvc.dll
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\bin\System.Web.Razor.dll
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\bin\System.Web.Webpages.Deployment.dll
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\bin\System.Web.Webpages.dll
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\bin\System.Web.Webpages.Razor.dll
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\bin\System.Web.Razor.xml
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\bin\System.Web.Webpages.xml
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\bin\System.Web.Webpages.Deployment.xml
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\bin\System.Web.Webpages.Razor.xml
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\bin\System.Web.Helpers.xml
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\bin\System.Web.Mvc.xml
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\obj\Debug\SampleSite.dll
+c:\users\zdegn_000\documents\visual studio 2013\Projects\SampleSite\SampleSite\obj\Debug\SampleSite.pdb
