@@ -19,8 +19,8 @@ namespace SampleSite
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional, }
-                //namespaces: new[] { "SampleSite.Controllers" }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional, },
+                namespaces: new[] { "SampleSite.Controllers" }
             );
 
             routes.MapRoute(
@@ -39,6 +39,11 @@ namespace SampleSite
                name: "Login",
                url: "Auth/Login",
                defaults: new { controller = "Auth", action = "Login", id = UrlParameter.Optional, namespaces }
+           );
+            routes.MapRoute(
+               name: "Logout",
+               url: "{controller}/{action}/{id}",
+               defaults: new { controller = "Auth", action = "Logout", id = UrlParameter.Optional}
            );
         }
     }

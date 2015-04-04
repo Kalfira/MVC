@@ -9,7 +9,11 @@ namespace SampleSite.Infrastructure
     {
         public override string[] GetRolesForUser(string username)
         {
-            return new[] { "admin" };
+            if (username == "Zane")
+            {
+                return new[] { "admin" };
+            }
+            return new string[] { };
         }
 
         public override void AddUsersToRoles(string[] usernames, string[] roleNames)

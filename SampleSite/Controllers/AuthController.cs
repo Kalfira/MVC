@@ -33,7 +33,13 @@ namespace SampleSite.Controllers
             if (!ModelState.IsValid)
                 return View(form);
             FormsAuthentication.SetAuthCookie(form.Username, true);
-            return View(form);
+            return RedirectToRoute("admin_default");
+        }
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToRoute("logout");
         }
     }
 }

@@ -16,8 +16,8 @@ namespace SampleSite.Areas.Admin
         {
             context.MapRoute(
                 "Admin_default",
-                "Admin/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional },
+                "Admin/Posts/",
+                new { controller = "Posts", action = "Index", id = UrlParameter.Optional },
                 new [] {"SampleSite.Areas.Admin.Controllers"}
             );
         }
