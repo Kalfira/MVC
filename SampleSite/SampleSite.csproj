@@ -112,6 +112,7 @@
     <Content Include="Views\Default\Login.cshtml" />
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Auth\Login.cshtml" />
+    <Content Include="Views\Posts\SamplePost.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -13,5 +13,10 @@ namespace SampleSite.Controllers
         {
             return View();
         }
+
+        public ActionResult SamplePost()
+        {
+            return View();
+        }
     }
 }
