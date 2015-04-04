@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 using SampleSite.ViewModels;
 
 namespace SampleSite.Controllers
@@ -31,12 +32,7 @@ namespace SampleSite.Controllers
         {
             if (!ModelState.IsValid)
                 return View(form);
-
-           if(form.Username != "Zane Degner")
-           {
-               ModelState.AddModelError("Username", "Username isn't awesome");
-               return View(form);
-           }
+            FormsAuthentication.SetAuthCookie(form.Username, true);
             return View(form);
         }
     }
