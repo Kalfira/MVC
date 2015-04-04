@@ -116,13 +116,10 @@
     <Content Include="Views\Default\Login.cshtml" />
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Auth\Login.cshtml" />
-<<<<<<< HEAD
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Posts\Index.cshtml" />
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
-=======
     <Content Include="Views\Posts\SamplePost.cshtml" />
->>>>>>> MVC/master
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -19,14 +19,15 @@ namespace SampleSite
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional, namespaces }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional, }
+                //namespaces: new[] { "SampleSite.Controllers" }
             );
 
             routes.MapRoute(
                 name: "Posts",
                 url: "Posts",
-                defaults: new { controller = "Posts", action = "Index", id = UrlParameter.Optional, SampleSite.Controllers.PostsController }
+                defaults: new { controller = "Posts", action = "Index", id = UrlParameter.Optional, },
+                namespaces: new[] {"SampleSite.Controllers"}
             );
 
             routes.MapRoute(
