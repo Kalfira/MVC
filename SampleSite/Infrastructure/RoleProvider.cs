@@ -2,14 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using SampleSite.Models;
+using SampleSite.DAL;
 
 namespace SampleSite.Infrastructure
 {
     public class RoleProvider : System.Web.Security.RoleProvider
     {
+        private DatabaseContext db = new DatabaseContext();
         public override string[] GetRolesForUser(string username)
         {
-            if (username == "Zane")
+            var results = db.Users.ToList();
+            var stringList = results.OfType<string>();
+            if (stringList.Contains(username))
             {
                 return new[] { "admin" };
             }

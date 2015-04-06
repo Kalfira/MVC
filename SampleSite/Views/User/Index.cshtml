@@ -1,0 +1,14 @@
+﻿@model IEnumerable<SampleSite.Models.User>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach(var item in Model)
+{
+    @Html.DisplayFor(modelItem => item.id)<br />
+    @Html.DisplayFor(modelItem => item.username)<br />
+    @Html.DisplayFor(modelItem => item.password)<br />
+}
+

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
-using SampleSite.ViewModels;
+using SampleSite.Models;
 
 namespace SampleSite.Controllers
 {
@@ -13,18 +13,12 @@ namespace SampleSite.Controllers
         // GET: Auth
         public ActionResult Index()
         {
-            return View(new Auth
-                {
-                    Test ="This is my test value"
-                });
+            return View();
         }
 
         public ActionResult Login()
         {
-            return View(new Auth
-                {
-                    Test ="This is my test value"
-                });
+            return View();
         }
 
         [HttpPost]
