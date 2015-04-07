@@ -25,15 +25,22 @@ namespace SampleSite.DAL
             return false;
         }
 
-        public static void Register(string user, string pass)
+        public static bool Register(string user, string pass)
         {
             DatabaseContext db = new DatabaseContext();
-            db.Users.Add(new Models.User()
+         
+            if (!db.Users.Any(u => u.username == user))
             {
-                username = user,
-                password = pass,
-            });
-            db.SaveChanges();
+                db.Users.Add(new Models.User()
+                {
+                    username = user,
+                    password = pass,
+                });
+                db.SaveChanges();
+                return true;
+            }
+            return false;
+            
         }
     }
 }

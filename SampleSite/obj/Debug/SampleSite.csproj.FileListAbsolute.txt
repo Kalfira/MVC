@@ -15,7 +15,6 @@ C:\Users\zdegn_000\Documents\Visual Studio 2013\Projects\SampleSite\SampleSite\b
 C:\Users\zdegn_000\Documents\Visual Studio 2013\Projects\SampleSite\SampleSite\bin\System.Web.WebPages.Razor.xml
 C:\Users\zdegn_000\Documents\Visual Studio 2013\Projects\SampleSite\SampleSite\obj\Debug\SampleSite.dll
 C:\Users\zdegn_000\Documents\Visual Studio 2013\Projects\SampleSite\SampleSite\obj\Debug\SampleSite.pdb
-C:\Users\zdegn_000\Documents\Visual Studio 2013\Projects\SampleSite\SampleSite\obj\Debug\SampleSite.csprojResolveAssemblyReference.cache
 C:\Users\zdegn_000\Documents\Visual Studio 2013\Projects\SampleSite\SampleSite\bin\EntityFramework.dll
 C:\Users\zdegn_000\Documents\Visual Studio 2013\Projects\SampleSite\SampleSite\bin\EntityFramework.SqlServer.dll
 C:\Users\zdegn_000\Documents\Visual Studio 2013\Projects\SampleSite\SampleSite\bin\EntityFramework.xml

@@ -15,6 +15,8 @@ namespace SampleSite.DAL
 
         public virtual DbSet<User> Users { get; set; }
 
+        
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()

@@ -17,6 +17,11 @@ namespace SampleSite.Controllers
             return View();
         }
 
+        public ActionResult Index(string entry)
+        {
+            return Content("DB Error thrown!" + entry);
+        }
+
         public ActionResult Login()
         {
             return View();
@@ -25,11 +30,16 @@ namespace SampleSite.Controllers
         [HttpPost]
         public ActionResult Login(Auth form)
         {
-            Session["User"] = form.Username;
             if (Validate.IsUser(form.Username, form.Password))
                 {
-                    Session["Role"] = "admin";
-                    return RedirectToRoute("admin_default");
+                    Session["User"] = form.Username;
+                    if ((string)Session["user"] == "Zane")
+                    {
+                        Session["Role"] = "admin";
+                        return RedirectToRoute("admin_default");
+                    }
+                    Session["Role"] = "user";
+                    return RedirectToRoute("posts");
                 }
             return View();
 
@@ -55,8 +65,18 @@ namespace SampleSite.Controllers
         [HttpPost]
         public ActionResult Register(Auth form)
         {
-            Validate.Register(form.Username, form.Password);
-            return View();
+            if(Validate.Register(form.Username, form.Password))
+            {
+                Session["User"] = form.Username;
+                if ((string)Session["user"] == "Zane")
+                {
+                    Session["Role"] = "admin";
+                    return RedirectToRoute("admin_default");
+                }
+                Session["Role"] = "user";
+                return RedirectToRoute("posts");
+            }
+            return Content("UNABLE TO REGISTER USER");
         }
     }
 }
