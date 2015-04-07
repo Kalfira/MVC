@@ -25,7 +25,5 @@ namespace SampleSite.DAL
                 .Property(e => e.password)
                 .IsUnicode(false);
         }
-
-        public System.Data.Entity.DbSet<SampleSite.Models.Logins> Logins { get; set; }
     }
 }

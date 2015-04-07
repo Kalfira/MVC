@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using SampleSite.Models;
+using SampleSite.DAL;
 
 namespace SampleSite.Controllers
 {
@@ -24,16 +25,38 @@ namespace SampleSite.Controllers
         [HttpPost]
         public ActionResult Login(Auth form)
         {
-            if (!ModelState.IsValid)
-                return View(form);
-            FormsAuthentication.SetAuthCookie(form.Username, true);
-            return RedirectToRoute("admin_default");
+            Session["User"] = form.Username;
+            if (Validate.IsUser(form.Username, form.Password))
+                {
+                    Session["Role"] = "admin";
+                    return RedirectToRoute("admin_default");
+                }
+            return View();
+
         }
 
         public ActionResult Logout()
         {
-            FormsAuthentication.SignOut();
+            Session["User"] = null;
+            Session["Role"] = null;
             return RedirectToRoute("logout");
+        }
+
+        public ActionResult Forgot()
+        {
+            return Content("TOO BAD!");
+        }
+
+        public ActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Register(Auth form)
+        {
+            Validate.Register(form.Username, form.Password);
+            return View();
         }
     }
 }

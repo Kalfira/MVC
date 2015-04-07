@@ -13,8 +13,8 @@ namespace SampleSite.DAL
         {
             var users = new List<User>
             {
-                new User{id = 0, username ="admin", password="admin"},
-                new User{id = 1, username = "user", password="user"}
+                new User{username ="admin", password="admin"},
+                new User{username = "user", password="user"}
             };
             users.ForEach(s => context.Users.Add(s));
             context.SaveChanges();
