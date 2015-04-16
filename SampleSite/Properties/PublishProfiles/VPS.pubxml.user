@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\zdegn_000\Desktop\SampleSite</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Areas/Admin/Views/Posts/Index.cshtml">
+      <publishTime>04/04/2015 08:48:22</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/web.config">
+      <publishTime>04/04/2015 08:48:22</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/_ViewStart.cshtml">
+      <publishTime>04/04/2015 08:48:22</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>04/05/2015 16:11:52</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>04/05/2015 16:11:52</publishTime>
+    </File>
+    <File Include="bin/SampleSite.dll">
+      <publishTime>04/07/2015 01:56:43</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>04/03/2015 19:12:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>04/03/2015 19:12:01</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>04/03/2015 19:12:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>04/03/2015 19:12:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>04/03/2015 19:12:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>04/03/2015 19:12:00</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/02/2015 21:12:10</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/05/2015 22:27:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>04/05/2015 22:27:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>04/05/2015 22:27:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>04/05/2015 22:27:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>04/05/2015 22:27:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>04/05/2015 22:27:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>04/05/2015 22:27:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>04/05/2015 22:27:31</publishTime>
+    </File>
+    <File Include="Views/Auth/Login.cshtml">
+      <publishTime>04/07/2015 00:19:55</publishTime>
+    </File>
+    <File Include="Views/Auth/Register.cshtml">
+      <publishTime>04/06/2015 22:43:19</publishTime>
+    </File>
+    <File Include="Views/Default/Index.cshtml">
+      <publishTime>04/03/2015 19:05:52</publishTime>
+    </File>
+    <File Include="Views/Default/Login.cshtml">
+      <publishTime>04/03/2015 19:05:52</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>04/06/2015 20:44:25</publishTime>
+    </File>
+    <File Include="Views/Home/Login.cshtml">
+      <publishTime>04/03/2015 19:06:37</publishTime>
+    </File>
+    <File Include="Views/Posts/Index.cshtml">
+      <publishTime>04/04/2015 10:21:36</publishTime>
+    </File>
+    <File Include="Views/Posts/SamplePost.cshtml">
+      <publishTime>04/04/2015 10:19:51</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>04/06/2015 20:08:31</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>04/02/2015 21:12:10</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>04/03/2015 19:06:34</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/07/2015 01:56:44</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

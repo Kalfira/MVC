@@ -1,0 +1,29 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<body>
+    <a href="@Url.RouteUrl("home")">Home</a>
+    <a href="@Url.RouteUrl("Posts")">Posts</a>
+    @if (Session["Role"]=="admin")
+    {
+    <a href="@Url.RouteUrl("admin_default")">Admin</a>
+    }
+    @if (Session["User"] != null)
+    {
+        <a href="~/Auth/Logout">Logout</a>
+        <div>Welcome back, @Session["User"]</div>
+      
+    }
+    else
+    {
+        <a href="@Url.RouteUrl("login")">Login</a>
+    }
+    
+    @RenderBody()
+
+    <footer>
+        &copy; @DateTime.UtcNow.Year - Zane Degner
+    </footer>
+</body>
+</html>
